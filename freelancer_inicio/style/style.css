@@ -52,6 +52,8 @@ h1,h2,h3{
     text-align: center;
     font-size: 3.8rem;
     font-weight: bold;
+    font-family: 'Lobster', cursive;
+    
 
 }
 
@@ -61,11 +63,18 @@ h1,h2,h3{
 }
 
 .contenedor{
-    max-width: 120rem;
+    max-width: 100%;
     margin: 0 auto 0 auto;
 }
+.contenedor h2{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    font-family:'Lobster', cursive;
+    font-size: 4rem;
+    
+}
 
-.boton{
+.boton {
     background-color: var(--secundario);
     color: var(--blanco);
     padding: 1rem;
@@ -74,10 +83,13 @@ h1,h2,h3{
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
-    border-radius: .5rem;
     text-align: center;
     width: 90%;
     border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: width .5s;
+    border-radius: .5s;
 }
 
 .boton:hover{
@@ -85,7 +97,42 @@ h1,h2,h3{
     color: var(--negro);
     cursor: pointer;
 }
+/*
+.button *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .25s;
 
+}
+
+.iconosaurio{
+    opacity: 0;
+
+}
+
+.boton:focus{
+    width: 50px;
+    background-color: #0097a7;
+    border-radius: 50%;
+}
+
+.boton:hover{
+    background-color: var(--primario);
+    color: var(--negro);
+    cursor: pointer;
+}
+.boton:focus .text{
+    opacity: 0;
+
+}
+
+.boton:focus .icon{
+    opacity: 1;
+    transition-delay: .5s;
+}
+*/
 
 /*utilidades*/
 @media(min-width: 768) {
@@ -110,16 +157,14 @@ h1,h2,h3{
 .navegacion-principal {
    display: flex;
    flex-direction: column;
-
+   
 }
 
 .sombra{
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
-    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
-    background-color: var(--blanco);
-    padding: 2rem;
-    border-radius: 1rem;
+   background-image: url(/img/fondo.jpg);
+   width: 100%;
+   border-radius: 1%;
+
 }
 
 @media(min-width: 768px) {
@@ -157,12 +202,13 @@ h1,h2,h3{
 }
 
 .hero{
-    background-image: url(/img/hero.jpg);
+    background-image: url(/img/back.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
     position: relative;
     margin-bottom: 2rem;
+   
 
 }
 .contenido-hero{
@@ -173,11 +219,13 @@ h1,h2,h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;;
+    justify-content: center;
+  
 }
 
 .contenido-hero h2, .contenido-hero p{
     color: var(--blanco);
+    font-size: 3.5rem;
 
 }
 
@@ -204,6 +252,17 @@ h1,h2,h3{
     display: flex;
     flex-direction: column;
     align-items: center;
+     -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    background-color: var(--blanco);
+    padding: 2rem;
+    margin: 1rem;
+    max-width: 49rem;
+    
+    border-radius: 1rem;
+ 
+
 
 
 
@@ -239,6 +298,7 @@ h1,h2,h3{
     margin: 0 auto;
     padding: 2rem;
     border-radius: 2rem;
+
 }
 
 .formulario fieldset{
@@ -295,7 +355,10 @@ h1,h2,h3{
 }
 
 .enviar .boton{
-    width: 100%;
+    position: relative;
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
 }
 
 .footer{
