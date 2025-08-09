@@ -161,7 +161,7 @@ h1,h2,h3{
 }
 
 .sombra{
-   background-image: url(/img/fondo.jpg);
+   background-image: url(/First-Website-project/freelancer_inicio/img/fondo.jpg);
    width: 100%;
    border-radius: 1%;
 
@@ -202,7 +202,7 @@ h1,h2,h3{
 }
 
 .hero{
-    background-image: url(/img/back.jpeg);
+    background-image: url(/First-Website-project/freelancer_inicio/img/back.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
